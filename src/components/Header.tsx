@@ -5,7 +5,7 @@ export default function Header() {
   const [isMenuVisible, setIsMenuVisible] = useState<boolean>(false);
 
   return (
-    <header className="px-6 pt-8 flex justify-between gap-2">
+    <header className="px-6 py-8 flex justify-between gap-2">
       <a href="" className="max-w-[12.625rem]">
         <img src={logo} alt="Logo, go to Home" className="max-w-[12.625rem]" />
       </a>
