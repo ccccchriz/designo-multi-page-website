@@ -2,7 +2,11 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      maxWidth: {
+        site: "69.4375rem",
+      },
+    },
     fontFamily: {
       primary: ["Jost*", "sans-serif"],
     },
@@ -31,7 +35,7 @@ export default {
       black: "hsl(270, 3%, 11%)",
     },
     screens: {
-      tablet: "34rem",
+      tablet: "36rem",
       desktop: "54rem",
     },
   },
