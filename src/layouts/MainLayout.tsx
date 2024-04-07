@@ -7,11 +7,13 @@ type MainLayoutProps = {
 
 export default function MainLayout({ children }: MainLayoutProps) {
   return (
-    <div className="flex flex-col content-center min-h-svh">
+    <div className="flex flex-col content-center min-h-svh font-primary">
       <Header></Header>
-      <main className="w-full max-w-site grow ">
-        <h1 className="sr-only">Designo</h1>
-        {children}
+      <main className="grow grid justify-items-center">
+        <div className="w-full max-w-site ">
+          <h1 className="sr-only">Designo</h1>
+          {children}
+        </div>
       </main>
       <Footer></Footer>
     </div>
