@@ -3,7 +3,7 @@ import phone from "../assets/home/desktop/image-hero-phone.png";
 export default function Home() {
   return (
     <>
-      <div className="bg-peach px-6 py-20 text-white text-center grid gap-4 overflow-hidden tablet:mx-6 tablet:rounded-2xl justify-items-center bg-[url('/images/home/bg-pattern-hero-home.svg')] bg-no-repeat bg-[right_75%_center]">
+      <div className="bg-peach px-6 py-20 text-white text-center grid gap-4 overflow-hidden tablet:mx-6 tablet:rounded-2xl justify-items-center bg-[url('/images/home/bg-pattern-hero-home.svg')] bg-no-repeat bg-[right_75%_center] desktop:grid-cols-[auto_1fr] desktop:text-left desktop:justify-items-start desktop:px-24 desktop:py-36">
         <h2 className="text-mobile-heading-l tablet:text-heading-l max-w-[35.8125rem] leading-none font-medium">
           Award-winning custom designs and digital branding solutions
         </h2>
@@ -18,7 +18,11 @@ export default function Home() {
         >
           Learn More
         </a>
-        <img src={phone} alt="" className="-mb-80 scale-150 mt-16" />
+        <img
+          src={phone}
+          alt=""
+          className="-mb-80 scale-150 mt-16 desktop:row-[1/4] desktop:col-[2/3]"
+        />
       </div>
     </>
   );
