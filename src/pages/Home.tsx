@@ -1,5 +1,6 @@
 import phone from "../assets/home/desktop/image-hero-phone.png";
 import LinkCard from "../components/LinkCard";
+import SkillCard from "../components/SkillCard";
 
 export default function Home() {
   return (
@@ -31,6 +32,12 @@ export default function Home() {
           <LinkCard type="web" className="desktop:row-[1/3]" />
           <LinkCard type="app" />
           <LinkCard type="graphic" />
+        </div>
+        <div className="grid px-6 gap-20 desktop:grid-cols-3">
+          <h2 className="sr-only">Our Skills</h2>
+          <SkillCard type="passionate" />
+          <SkillCard type="resourceful" />
+          <SkillCard type="friendly" />
         </div>
       </div>
     </>
