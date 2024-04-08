@@ -34,10 +34,10 @@ export default function LinkCard({ type, className }: LinkCardProps) {
         className
       }
     >
-      <span className="tracking-[0.0875rem] text-mobile-heading-m tablet:text-heading-m">
+      <h3 className="tracking-[0.0875rem] text-mobile-heading-m tablet:text-heading-m">
         {types[type].title}
-      </span>
-      <span className="tracking-[0.3125rem] text-body-sm flex justify-center items-center gap-5">
+      </h3>
+      <p className="tracking-[0.3125rem] text-body-sm flex justify-center items-center gap-5">
         View Project{" "}
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +51,7 @@ export default function LinkCard({ type, className }: LinkCardProps) {
             fillRule="evenodd"
           />
         </svg>
-      </span>
+      </p>
     </a>
   );
 }

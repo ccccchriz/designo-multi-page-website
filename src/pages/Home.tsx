@@ -27,6 +27,7 @@ export default function Home() {
           />
         </div>
         <div className="grid px-6 gap-6 desktop:grid-cols-2">
+          <h2 className="sr-only">Project Types</h2>
           <LinkCard type="web" className="desktop:row-[1/3]" />
           <LinkCard type="app" />
           <LinkCard type="graphic" />
