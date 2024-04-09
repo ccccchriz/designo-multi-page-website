@@ -29,12 +29,6 @@ const types: Types = {
         image: "/images/projects/web/image-express.jpg",
       },
       {
-        title: "Express",
-        description:
-          "A multi-carrier shipping website for ecommerce businesses",
-        image: "/images/projects/web/image-express.jpg",
-      },
-      {
         title: "Transfer",
         description:
           "Site for low-cost money transfers and sending money within seconds",
@@ -74,27 +68,34 @@ type ProjectsProps = {
 
 export default function Projects({ type }: ProjectsProps) {
   return (
-    <>
-      <div className="">
-        <h2>{types[type].title}</h2>
-        <p>{types[type].paragraph}</p>
+    <div className="grid gap-24 pb-24">
+      <div className="bg-peach text-white py-24 px-6 text-center grid gap-6">
+        <h2 className="font-medium text-mobile-heading-l">
+          {types[type].title}
+        </h2>
+        <p className="text-body-sm">{types[type].paragraph}</p>
       </div>
-      <ul>
+      <ul className="px-6 grid gap-10">
         {types[type].projects.map((el) => (
-          <li>
+          <li
+            key={el.title}
+            className="bg-light-peach bg-opacity-20 rounded-2xl overflow-hidden"
+          >
             <img src={el.image} alt="" />
-            <a href="">
-              <h3>{el.title}</h3>
-              <p>{el.description}</p>
+            <a href="" className="p-8 grid gap-4 text-center">
+              <h3 className="font-medium text-mobile-heading-s text-peach uppercase tracking-[0.3125rem]">
+                {el.title}
+              </h3>
+              <p className="text-dark-gray">{el.description}</p>
             </a>
           </li>
         ))}
       </ul>
-      <div className="">
+      <div className="px-6 grid gap-6">
         {types[type].links.map((el) => (
-          <LinkCard type={el} />
+          <LinkCard key={el} type={el} />
         ))}
       </div>
-    </>
+    </div>
   );
 }
