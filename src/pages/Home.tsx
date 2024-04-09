@@ -17,7 +17,7 @@ export default function Home() {
           </p>
           <a
             href=""
-            className="bg-white text-black uppercase py-4 px-6 tracking-[2px] w-max font-medium rounded-lg"
+            className="bg-white text-black uppercase py-4 px-6 tracking-[2px] w-max font-medium rounded-lg cursor-pointer hover:bg-light-peach focus-visible:bg-light-peach"
           >
             Learn More
           </a>
