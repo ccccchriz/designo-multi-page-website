@@ -13,6 +13,8 @@ type Data = {
 
 type Types = {
   web: Data;
+  app: Data;
+  graphic: Data;
 };
 
 const types: Types = {
@@ -60,10 +62,72 @@ const types: Types = {
       },
     ],
   },
+  app: {
+    title: "App Design",
+    paragraph:
+      "Our mobile designs bring intuitive digital solutions to your customers right at their fingertips.",
+    links: ["web", "graphic"],
+    projects: [
+      {
+        title: "Airfilter",
+        description:
+          "Solving the problem of poor indoor air quality by filtering the air",
+        image: "/images/projects/app/image-airfilter.jpg",
+      },
+      {
+        title: "Eyecam",
+        description:
+          "Product that lets you edit your favorite photos and videos at any time",
+        image: "/images/projects/app/image-eyecam.jpg",
+      },
+      {
+        title: "Faceit",
+        description:
+          "Get to meet your favorite internet superstar with the faceit app",
+        image: "/images/projects/app/image-faceit.jpg",
+      },
+      {
+        title: "Todo",
+        description:
+          "A todo app that features cloud sync with light and dark mode",
+        image: "/images/projects/app/image-todo.jpg",
+      },
+      {
+        title: "Loopstudios",
+        description: "A VR experience app made for Loopstudios",
+        image: "/images/projects/app/image-loopstudios.jpg",
+      },
+    ],
+  },
+  graphic: {
+    title: "Graphic Design",
+    paragraph:
+      "We deliver eye-catching branding materials that are tailored to meet your business objectives.",
+    links: ["app", "web"],
+    projects: [
+      {
+        title: "Tim Brown",
+        description:
+          "A book cover designed for Tim Brown’s new release, ‘Change’",
+        image: "/images/projects/graphic/image-change.jpg",
+      },
+      {
+        title: "Boxed Water",
+        description: "A simple packaging concept made for Boxed Water",
+        image: "/images/projects/graphic/image-boxed-water.jpg",
+      },
+      {
+        title: "Science!",
+        description:
+          "A poster made in collaboration with the Federal Art Project",
+        image: "/images/projects/graphic/image-science.jpg",
+      },
+    ],
+  },
 };
 
 type ProjectsProps = {
-  type: "web";
+  type: "web" | "app" | "graphic";
 };
 
 export default function Projects({ type }: ProjectsProps) {
