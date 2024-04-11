@@ -146,11 +146,16 @@ export default function Projects({ type }: ProjectsProps) {
             className="bg-light-peach bg-opacity-20 rounded-2xl overflow-hidden grid tablet:grid-cols-[21.875rem_1fr] desktop:grid-cols-1"
           >
             <img src={el.image} alt="" />
-            <a href="" className="p-8 grid gap-4 text-center">
-              <h3 className="font-medium text-mobile-heading-s text-peach uppercase tracking-[0.3125rem] tablet:self-end">
+            <a
+              href=""
+              className="p-8 grid gap-4 text-center hover:bg-peach focus-visible:bg-peach group"
+            >
+              <h3 className="font-medium text-mobile-heading-s text-peach uppercase tracking-[0.3125rem] tablet:self-end group-hover:text-white group-focus-visible:text-white">
                 {el.title}
               </h3>
-              <p className="text-dark-gray">{el.description}</p>
+              <p className="text-dark-gray group-hover:text-white group-focus-visible:text-white">
+                {el.description}
+              </p>
             </a>
           </li>
         ))}
