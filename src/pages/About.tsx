@@ -7,6 +7,9 @@ import talentDesktop from "../assets/about/desktop/image-world-class-talent.jpg"
 import canadaIcon from "../assets/shared/desktop/illustration-canada.svg";
 import australiaIcon from "../assets/shared/desktop/illustration-australia.svg";
 import ukIcon from "../assets/shared/desktop/illustration-united-kingdom.svg";
+import realMobile from "../assets/about/mobile/image-real-deal.jpg";
+import realTablet from "../assets/about/tablet/image-real-deal.jpg";
+import realDesktop from "../assets/about/desktop/image-real-deal.jpg";
 
 export default function About() {
   return (
@@ -87,6 +90,30 @@ export default function About() {
             </a>
           </li>
         </ul>
+      </div>
+      <div className="overflow-hidden">
+        <picture className="object-cover w-full">
+          <source media="(min-width: 54rem)" srcSet={realDesktop} />
+          <source media="(min-width: 36rem)" srcSet={realTablet} />
+          <img src={realMobile} alt="" className="object-cover w-full" />
+        </picture>
+        <div className="bg-light-peach px-6 py-20 text-dark-gray text-center grid gap-6 bg-opacity-20">
+          <h2 className="font-medium text-mobile-heading-l text-peach">
+            The real deal
+          </h2>
+          <p className="text-body-sm">
+            As strategic partners in our clients’ businesses, we are ready to
+            take on any challenge as our own. Solving real problems require
+            empathy and collaboration, and we strive to bring a fresh
+            perspective to every opportunity. We make design and technology more
+            accessible and give you tools to measure success.
+          </p>
+          <p className="text-body-sm">
+            We are visual storytellers in appealing and captivating ways. By
+            combining business and marketing strategies, we inspire audiences to
+            take action and drive real results.
+          </p>
+        </div>
       </div>
     </div>
   );
