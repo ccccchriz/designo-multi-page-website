@@ -13,8 +13,8 @@ import realDesktop from "../assets/about/desktop/image-real-deal.jpg";
 
 export default function About() {
   return (
-    <div className="">
-      <div className="overflow-hidden">
+    <div className="tablet:mx-6 tablet:grid tablet:gap-28 tablet:pb-28">
+      <div className="overflow-hidden tablet:rounded-2xl">
         <picture className="object-cover w-full">
           <source media="(min-width: 54rem)" srcSet={heroDesktop} />
           <source media="(min-width: 36rem)" srcSet={heroTablet} />
@@ -31,7 +31,7 @@ export default function About() {
           </p>
         </div>
       </div>
-      <div className="overflow-hidden">
+      <div className="overflow-hidden tablet:rounded-2xl">
         <picture className="object-cover w-full">
           <source media="(min-width: 54rem)" srcSet={talentDesktop} />
           <source media="(min-width: 36rem)" srcSet={talentTablet} />
@@ -56,7 +56,7 @@ export default function About() {
           </p>
         </div>
       </div>
-      <div className="grid items-center px-6 py-28">
+      <div className="grid items-center px-6 py-28 tablet:py-0">
         <h2 className="sr-only">Locations</h2>
         <ul className="grid text-center font-medium uppercase text-dark-gray">
           <li className="grid gap-8 justify-items-center tracking-[0.3125rem] text-mobile-heading-s">
@@ -91,7 +91,7 @@ export default function About() {
           </li>
         </ul>
       </div>
-      <div className="overflow-hidden">
+      <div className="overflow-hidden tablet:rounded-2xl">
         <picture className="object-cover w-full">
           <source media="(min-width: 54rem)" srcSet={realDesktop} />
           <source media="(min-width: 36rem)" srcSet={realTablet} />
