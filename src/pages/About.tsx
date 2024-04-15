@@ -20,7 +20,7 @@ export default function About() {
           <source media="(min-width: 36rem)" srcSet={heroTablet} />
           <img src={heroMobile} alt="" className="object-cover w-full" />
         </picture>
-        <div className="bg-peach px-6 py-20 text-white text-center grid gap-6 desktop:row-[1/2]">
+        <div className="bg-peach px-6 py-20 text-white text-center flex flex-col gap-6 desktop:row-[1/2] desktop:justify-center desktop:text-left desktop:px-8">
           <h2 className="font-medium text-mobile-heading-l tablet:text-heading-l">
             About Us
           </h2>
@@ -39,7 +39,7 @@ export default function About() {
           <source media="(min-width: 36rem)" srcSet={talentTablet} />
           <img src={talentMobile} alt="" className="object-cover w-full" />
         </picture>
-        <div className="bg-light-peach px-6 py-20 text-dark-gray text-center grid gap-6 bg-opacity-20">
+        <div className="bg-light-peach px-6 py-20 text-dark-gray text-center flex flex-col gap-6 bg-opacity-20 desktop:row-[1/2] desktop:col-[2/3] desktop:justify-center desktop:text-left desktop:px-8">
           <h2 className="font-medium text-mobile-heading-l tablet:text-heading-m text-peach">
             World-class talent
           </h2>
@@ -99,7 +99,7 @@ export default function About() {
           <source media="(min-width: 36rem)" srcSet={realTablet} />
           <img src={realMobile} alt="" className="object-cover w-full" />
         </picture>
-        <div className="bg-light-peach px-6 py-20 text-dark-gray text-center grid gap-6 bg-opacity-20 desktop:row-[1/2]">
+        <div className="bg-light-peach px-6 py-20 text-dark-gray text-center flex flex-col gap-6 bg-opacity-20 desktop:row-[1/2] desktop:justify-center desktop:text-left desktop:px-8">
           <h2 className="font-medium text-mobile-heading-l tablet:text-heading-m text-peach">
             The real deal
           </h2>
