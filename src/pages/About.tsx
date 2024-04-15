@@ -14,13 +14,13 @@ import realDesktop from "../assets/about/desktop/image-real-deal.jpg";
 export default function About() {
   return (
     <div className="tablet:mx-6 tablet:grid tablet:gap-28 tablet:pb-28">
-      <div className="overflow-hidden tablet:rounded-2xl">
-        <picture className="object-cover w-full">
+      <div className="overflow-hidden tablet:rounded-2xl desktop:grid desktop:grid-cols-[1fr_auto]">
+        <picture className="object-cover w-full desktop:col-[2/3]">
           <source media="(min-width: 54rem)" srcSet={heroDesktop} />
           <source media="(min-width: 36rem)" srcSet={heroTablet} />
           <img src={heroMobile} alt="" className="object-cover w-full" />
         </picture>
-        <div className="bg-peach px-6 py-20 text-white text-center grid gap-6">
+        <div className="bg-peach px-6 py-20 text-white text-center grid gap-6 desktop:row-[1/2]">
           <h2 className="font-medium text-mobile-heading-l tablet:text-heading-l">
             About Us
           </h2>
@@ -33,7 +33,7 @@ export default function About() {
           </p>
         </div>
       </div>
-      <div className="overflow-hidden tablet:rounded-2xl">
+      <div className="overflow-hidden tablet:rounded-2xl desktop:grid desktop:grid-cols-[auto_1fr]">
         <picture className="object-cover w-full">
           <source media="(min-width: 54rem)" srcSet={talentDesktop} />
           <source media="(min-width: 36rem)" srcSet={talentTablet} />
@@ -60,7 +60,7 @@ export default function About() {
       </div>
       <div className="grid items-center px-6 py-28 tablet:py-0">
         <h2 className="sr-only">Locations</h2>
-        <ul className="grid text-center font-medium uppercase text-dark-gray">
+        <ul className="grid text-center font-medium uppercase text-dark-gray desktop:grid desktop:grid-cols-3">
           <li className="grid gap-8 justify-items-center tracking-[0.3125rem] text-mobile-heading-s">
             <img src={canadaIcon} alt="" />
             <h3 className="">Canada</h3>
@@ -93,13 +93,13 @@ export default function About() {
           </li>
         </ul>
       </div>
-      <div className="overflow-hidden tablet:rounded-2xl">
-        <picture className="object-cover w-full">
+      <div className="overflow-hidden tablet:rounded-2xl desktop:grid desktop:grid-cols-[1fr_auto]">
+        <picture className="object-cover w-full desktop:col-[2/3]">
           <source media="(min-width: 54rem)" srcSet={realDesktop} />
           <source media="(min-width: 36rem)" srcSet={realTablet} />
           <img src={realMobile} alt="" className="object-cover w-full" />
         </picture>
-        <div className="bg-light-peach px-6 py-20 text-dark-gray text-center grid gap-6 bg-opacity-20">
+        <div className="bg-light-peach px-6 py-20 text-dark-gray text-center grid gap-6 bg-opacity-20 desktop:row-[1/2]">
           <h2 className="font-medium text-mobile-heading-l tablet:text-heading-m text-peach">
             The real deal
           </h2>
