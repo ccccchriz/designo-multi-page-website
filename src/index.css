@@ -15,3 +15,9 @@
   font-weight: 500;
   font-style: normal;
 }
+
+@media (min-width: 34rem) {
+  .leaflet-container {
+    border-radius: 1rem;
+  }
+}
