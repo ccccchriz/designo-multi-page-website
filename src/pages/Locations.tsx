@@ -1,4 +1,4 @@
-import { MapContainer, TileLayer } from "react-leaflet";
+import { MapContainer, Marker, TileLayer } from "react-leaflet";
 
 export default function Locations() {
   return (
@@ -16,6 +16,7 @@ export default function Locations() {
               attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
+            <Marker position={[43.64099990951995, -79.41015585824242]}></Marker>
           </MapContainer>
           <div className="bg-light-peach bg-opacity-20 py-20 px-6 grid place-content-center gap-6 text-center text-body-sm">
             <h3 className="text-mobile-heading-l font-medium text-peach">
@@ -35,7 +36,7 @@ export default function Locations() {
         <li>
           <MapContainer
             className="h-[20rem]"
-            center={[43.64099990951995, -79.41015585824242]}
+            center={[-31.732751704358066, 152.6971584824212]}
             zoom={14}
             scrollWheelZoom={false}
           >
@@ -43,6 +44,9 @@ export default function Locations() {
               attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
+            <Marker
+              position={[-31.732751704358066, 152.6971584824212]}
+            ></Marker>
           </MapContainer>
           <div className="bg-light-peach bg-opacity-20 py-20 px-6 grid place-content-center gap-6 text-center text-body-sm">
             <h3 className="text-mobile-heading-l font-medium text-peach">
@@ -51,7 +55,7 @@ export default function Locations() {
 
             <p className="grid">
               <strong>Designo AU Office</strong>
-              <span>19 Balonne Street</span>
+              <span>24 Station St</span>
               New South Wales 2443
             </p>
 
@@ -64,7 +68,7 @@ export default function Locations() {
         <li>
           <MapContainer
             className="h-[20rem]"
-            center={[43.64099990951995, -79.41015585824242]}
+            center={[51.72720237281599, -3.862572568728834]}
             zoom={14}
             scrollWheelZoom={false}
           >
@@ -72,6 +76,7 @@ export default function Locations() {
               attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
+            <Marker position={[51.72720237281599, -3.862572568728834]}></Marker>
           </MapContainer>
           <div className="bg-light-peach bg-opacity-20 py-20 px-6 grid place-content-center gap-6 text-center text-body-sm">
             <h3 className="text-mobile-heading-l font-medium text-peach">
@@ -79,7 +84,7 @@ export default function Locations() {
             </h3>
             <p className="grid">
               <strong>Designo UK Office</strong>
-              <span>13 Colorado Way</span>
+              <span>26 Waun Gron</span>
               Rhyd-y-fro SA8 9GA
             </p>
             <p className="grid">
