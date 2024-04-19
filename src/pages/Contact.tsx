@@ -14,6 +14,7 @@ export default function Contact() {
           <input type="email" name="" id="" />
           <input type="tel" name="" id="" />
           <textarea name="" id=""></textarea>
+          <button type="submit">Submit</button>
         </form>
       </div>
     </>
