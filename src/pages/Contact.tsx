@@ -1,15 +1,15 @@
 export default function Contact() {
   return (
     <>
-      <div className="bg-peach text-white grid p-6">
-        <h2>Contact Us</h2>
-        <p>
+      <div className="bg-peach text-white grid gap-8 p-6 text-center">
+        <h2 className="font-medium text-mobile-heading-l">Contact Us</h2>
+        <p className="text-body-sm">
           Ready to take it to the next level? Let’s talk about your project or
           idea and find out how we can help your business grow. If you are
           looking for unique digital experiences that’s relatable to your users,
           drop us a line.
         </p>
-        <form action="" className="grid">
+        <form action="" className="grid gap-2 justify-items-center">
           <label htmlFor="name" className="sr-only">
             Name
           </label>
@@ -18,7 +18,7 @@ export default function Contact() {
             name="name"
             id="name"
             placeholder="Name"
-            className="bg-[transparent] border-b border-b-white p-3 placeholder:text-white placeholder:opacity-15 font-medium"
+            className="bg-[transparent] border-b border-b-white p-3 placeholder:text-white placeholder:opacity-35 font-medium w-full"
           />
           <label htmlFor="email" className="sr-only">
             Email Address
@@ -28,7 +28,7 @@ export default function Contact() {
             name="email"
             id="email"
             placeholder="Email Address"
-            className="bg-[transparent] border-b border-b-white p-3 placeholder:text-white placeholder:opacity-15 font-medium"
+            className="bg-[transparent] border-b border-b-white p-3 placeholder:text-white placeholder:opacity-35 font-medium w-full"
           />
           <label htmlFor="phone" className="sr-only">
             Phone
@@ -38,7 +38,7 @@ export default function Contact() {
             name="phone"
             id="phone"
             placeholder="Phone"
-            className="bg-[transparent] border-b border-b-white p-3 placeholder:text-white placeholder:opacity-15 font-medium"
+            className="bg-[transparent] border-b border-b-white p-3 placeholder:text-white placeholder:opacity-35 font-medium w-full"
           />
           <label htmlFor="message" className="sr-only">
             Your Message
@@ -47,9 +47,14 @@ export default function Contact() {
             name="message"
             id="message"
             placeholder="Your Message"
-            className="bg-[transparent] border-b border-b-white p-3 placeholder:text-white placeholder:opacity-15 font-medium"
+            className="bg-[transparent] border-b border-b-white p-3 placeholder:text-white placeholder:opacity-35 font-medium w-full"
           ></textarea>
-          <button type="submit">Submit</button>
+          <button
+            type="submit"
+            className="bg-white rounded-lg text-black w-max px-12 py-4 uppercase tracking-[0.0625rem] font-medium mt-8"
+          >
+            Submit
+          </button>
         </form>
       </div>
     </>
