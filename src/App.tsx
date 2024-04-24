@@ -1,7 +1,12 @@
+import MainLayout from "./layouts/MainLayout";
+import Contact from "./pages/Contact";
+
 function App() {
   return (
     <>
-      <div className="">Designo</div>
+      <MainLayout>
+        <Contact />
+      </MainLayout>
     </>
   );
 }
