@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
     <>
-      <div className="bg-peach text-white grid gap-8 p-6 text-center">
+      <div className="bg-peach text-white grid gap-8 p-6 text-center tablet:mx-6 tablet:rounded-2xl tablet:mb-12">
         <h2 className="font-medium text-mobile-heading-l">Contact Us</h2>
         <p className="text-body-sm">
           Ready to take it to the next level? Let’s talk about your project or
@@ -51,7 +51,7 @@ export default function Contact() {
           ></textarea>
           <button
             type="submit"
-            className="bg-white rounded-lg text-black w-max px-12 py-4 uppercase tracking-[0.0625rem] font-medium mt-8"
+            className="bg-white rounded-lg text-black w-max px-12 py-4 uppercase tracking-[0.0625rem] font-medium mt-8 tablet:place-self-end"
           >
             Submit
           </button>
